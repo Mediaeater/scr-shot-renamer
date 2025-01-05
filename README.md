@@ -16,14 +16,16 @@ this script merges offline ocr + huggingface image captioning to rename images w
   pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu
 
 
-## pip install transformers pillow pytesseract
+```bash
+ pip install transformers pillow pytesseract
 
-usage
-edit caption.py to set folder to your image directory.
+#usage
+edit caption.py to set folder to your image directory. (create if needed)
 confirm tesseract is installed: tesseract --version.
 run the script:
-bash
-Copy code
+
+  ```bash
 python caption.py
+
 each image will be renamed in-place with a combination of ocr text and ai-generated caption.
  
