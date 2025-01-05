@@ -19,7 +19,8 @@ this script merges offline ocr + huggingface image captioning to rename images w
 ```bash
  pip install transformers pillow pytesseract
 
-#usage
+
+##usage
 edit caption.py to set folder to your image directory. (create if needed)
 confirm tesseract is installed: tesseract --version.
 run the script:
@@ -27,5 +28,5 @@ run the script:
   ```bash
 python caption.py
 
-each image will be renamed in-place with a combination of ocr text and ai-generated caption.
+- ** each image will be renamed in-place with a combination of ocr text and ai-generated caption.
  
